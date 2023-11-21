@@ -40,7 +40,7 @@ createTask(task)
         <label className="inline-flex items-center gap-x-2">
             <input type="checkbox"
             className="h-5 w-5 text-indigo-600 "
-            onChange={(e) => setTask({...task, done: !task.done})}/>
+            onChange={() => setTask({...task, done: !task.done})}/>
             <span>done</span>
         </label>
 
